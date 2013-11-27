@@ -2,6 +2,8 @@
 
 View the demo at http://www.blacktm.com/bb_connector_api/
 
+View the JSON response structure at https://gist.github.com/blacktm/7668417
+
 ## Usage
 
 Call the `init()` function to call the Google spreadsheet data via an AJAX request. Since this is an asynchronous request, a callback must be provided.
