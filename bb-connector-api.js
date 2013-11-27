@@ -22,7 +22,7 @@ var BBConnectorAPI = function () {
   ///////////////////////////
   
   /*
-   * Store and validate the data.
+   * Store and validate the data
    */
   var storeData = function (raw) {
     
@@ -120,7 +120,7 @@ var BBConnectorAPI = function () {
   
 
   /*
-   * validate each data element.
+   * validate each data element
    */
   var validate = function (alias, property, el, type) {
     
@@ -181,7 +181,7 @@ var BBConnectorAPI = function () {
   
   
   /*
-   * Return the data.
+   * Return the data
    */
   var getData = function () {
     return data;
@@ -189,7 +189,7 @@ var BBConnectorAPI = function () {
   
   
   /*
-   * Retrieve the log.
+   * Retrieve the log
    */
   var getLog = function () {
     return log;
@@ -197,7 +197,7 @@ var BBConnectorAPI = function () {
   
   
   /*
-   * Log stuff to the console.
+   * Log stuff to the console
    */
   var logToConsole = function (o, type) {
     switch (type) {
@@ -207,7 +207,7 @@ var BBConnectorAPI = function () {
         }
         break;
       case "json":
-        console.log(JSON.stringify(data, null, 2));
+        console.log(JSON.stringify(o, null, 2));
         break;
       default:
         console.log(o);
