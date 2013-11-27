@@ -2,14 +2,30 @@
 <html>
 <head>
   <title></title>
+  <style></style>
 </head>
 <body>
+  
+  <h1>Blue Button Connector API Demo</h1>
+  
+  <pre><code id="json"></code></pre>
   
   <script src="tabletop.js"></script>
   <script src="bb-connector-api.js"></script>
   <script>
   
-  BBConnectorAPI.getData();
+  function next () {
+    var log = BBConnectorAPI.getLog();
+    BBConnectorAPI.logToConsole(log, "array");
+    
+    var data = BBConnectorAPI.getData();
+    BBConnectorAPI.logToConsole(data, "json");
+    
+    var json = JSON.stringify(data, null, 2);
+    document.getElementById("json").innerHTML = json;
+  }
+  
+  BBConnectorAPI.init(next);
   
   </script>
 </body>
